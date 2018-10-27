@@ -1,0 +1,23 @@
+---
+
+- name: run the playbook tasks on the localhost
+  hosts: localhost
+  connection: local
+  become: yes
+  tasks:
+
+  - name: print out the hostname of target
+    command: hostname
+
+  - name: full system upgrade
+    pacman:
+      update_cache: yes
+      upgrade: yes
+
+  - name: Install package
+    pacman:
+      name: "{{ item }}"
+      state: present
+    with_items:
+     - sl
+     - cowsay
