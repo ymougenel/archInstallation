@@ -3,13 +3,5 @@
 - name: run the playbook tasks on the localhost
   hosts: localhost
   connection: local
-  tasks:
-
-  - name: print out the hostname of target
-    command: hostname
-
-  - name: Download foo.conf
-    get_url:
-      url: "{{ CONFIG_URL }}.gitconfig.sample"
-      dest: ~/tmp/ansible/workspace
-      mode: 644
+  roles:
+    - { role: configuration }

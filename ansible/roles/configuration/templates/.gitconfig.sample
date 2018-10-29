@@ -1,0 +1,20 @@
+[user]
+	name = Yann
+	email = yann.xxx@
+[alias]
+	# Allow to type multiple git (ex: git git git status)
+	git = !exec git
+	co = checkout
+	ci = commit -m
+	cia = commit -am
+	st = status
+	br = branch
+	ri = rebase -i HEAD~2
+	lo = log --pretty=format:'  %C(yellow)%cr%Creset : %C(red)%cn%Creset : %C(cyan)%h%C(green)%d%Creset%n        %s' --all --graph --decorate --color --full-history     --date=relative --date-order
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	undo = "!f() { \\\n    git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-1}}; \\\n}; f"
+[core]
+	editor = vim
+# https://git-scm.com/docs/git-credential-store
+#[credential]
+# helper = cache --timeout=3600

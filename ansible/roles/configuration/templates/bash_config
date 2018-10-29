@@ -1,0 +1,15 @@
+# ------------------------------- PATHS -------------------------------------
+
+# Java
+#export JAVA_HOME=""
+#export PATH=$PATH:$JAVA_HOME/bin
+
+
+# ------------------------------ Alias communs -------------------------------
+
+# Docker
+alias dockerStopAll='docker stop $(docker ps -a -q)'
+alias dockerRmAll='docker rm $(docker ps -a -q)'
+
+alias balias='vim ~/.bash_aliases'
+alias gti='git' 
