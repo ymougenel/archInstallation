@@ -1,1 +1,5 @@
 CONFIG_URL: "https://raw.githubusercontent.com/ymougenel/configuration/master/"
+
+commun_list:
+  - { "sl" }
+  - { "cowsay" }

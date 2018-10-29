@@ -19,5 +19,4 @@
       name: "{{ item }}"
       state: present
     with_items:
-     - sl
-     - cowsay
+     - "{{ commun_list }}"
