@@ -1,6 +1,6 @@
 [user]
 	name = Yann
-	email = yann.xxx@
+	email = {{myEmail}}
 [alias]
 	# Allow to type multiple git (ex: git git git status)
 	git = !exec git

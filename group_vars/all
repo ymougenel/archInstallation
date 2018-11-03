@@ -1,5 +1,5 @@
 CONFIG_URL: "https://raw.githubusercontent.com/ymougenel/configuration/master/"
-
+myEmail: "toto@gmail.com"
 commun_repos:
   - "terminator"
   - "zsh"
@@ -7,6 +7,7 @@ commun_repos:
   - "baobab"
   - "thunderbird"
   - "gimp"
+  - "tree"
 
 dev_repos:
   - "maven"
@@ -16,4 +17,3 @@ dev_repos:
 devops_repos:
   - "jenkins"
   - "docker"
-  
