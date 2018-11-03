@@ -1,5 +1,5 @@
-CONFIG_URL: "https://raw.githubusercontent.com/ymougenel/configuration/master/"
 myEmail: "toto@gmail.com"
+
 commun_repos:
   - "terminator"
   - "zsh"
