@@ -8,11 +8,16 @@ commun_repos:
   - "thunderbird"
   - "gimp"
   - "tree"
+  - "ntfs-3g"
+  - "bluez"
+  - "gparted"
+  - "libreoffice-fresh"
 
 dev_repos:
   - "maven"
   - "intellij-idea-ultimate-edition"
   - "tig"
+  - "python-pip"
 
 devops_repos:
   - "jenkins"
