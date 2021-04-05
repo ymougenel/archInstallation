@@ -1,16 +1,22 @@
-  - name: full system upgrade
-    pacman:
-      update_cache: yes
-      upgrade: yes
+- include: ubuntu-setup.yml
+  when: ansible_distribution == "Ubuntu"
 
-  - name: Install package
-    pacman:
-      name: "{{ item }}"
-      state: present
-    with_items:
-     - "{{ repos }}"
+- name: full system upgrade
+  package:
+    update_cache: yes
+    upgrade: yes
 
-# - name: Install package
-#   shell: echo "{{ item }}" >> /home/yann/tmp/ansible_repos.txt
-#   with_items:
-#    - "{{ repos }}"
+- name: Install package
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ repos }}"
+
+- name: Install Ubuntu packages
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ Ubuntu_repos }}"
+  when: ansible_distribution == "Ubuntu"

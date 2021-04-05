@@ -1,9 +1,10 @@
 myEmail: "toto@gmail.com"
 
 commun_repos:
-  - "terminator"
-  - "zsh"
   - "atom"
+  - "terminator"
+  - "vim"
+  - "zsh"
   - "baobab"
   - "thunderbird"
   - "gimp"
@@ -11,14 +12,17 @@ commun_repos:
   - "ntfs-3g"
   - "bluez"
   - "gparted"
-  - "libreoffice-fresh"
-
-dev_repos:
+  - "libreoffice"
   - "maven"
-  - "intellij-idea-ultimate-edition"
   - "tig"
   - "python-pip"
 
-devops_repos:
-  - "jenkins"
+archlinux_repos:
+  - "intellij-idea-ultimate-edition"
   - "docker"
+
+Ubuntu_repos:
+  - "docker-ce"
+
+ubuntu_ppas:
+  - "ppa:webupd8team/atom"
