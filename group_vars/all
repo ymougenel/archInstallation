@@ -3,7 +3,6 @@ myEmail: "toto@gmail.com"
 commun_repos:
   - "terminator"
   - "zsh"
-  - "atom"
   - "baobab"
   - "thunderbird"
   - "gimp"

@@ -1,14 +1,23 @@
-  - name: full system upgrade
+  - name: full system upgrade for Ubuntu
+    apt:
+      update_cache: yes
+      upgrade: yes
+    when: ansible_distribution == "Ubuntu"
+
+  - name: full system upgrade for Archlinux
     pacman:
       update_cache: yes
       upgrade: yes
+    when: ansible_distribution == "Archlinux" or ansible_distribution == "Arch Linux"
 
   - name: Install package
-    pacman:
+    ansible.builtin.package:
       name: "{{ item }}"
       state: present
     with_items:
      - "{{ repos }}"
+
+#ansible.builtin.package
 
 # - name: Install package
 #   shell: echo "{{ item }}" >> /home/yann/tmp/ansible_repos.txt
