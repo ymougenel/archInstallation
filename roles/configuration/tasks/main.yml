@@ -3,12 +3,6 @@
       src: "bash_config"
       dest: "~/.bash_config"
 
-- name: declare an atom keymap
-  template:
-      src: "keymap.cson"
-      dest: "~/.atom/keymap.cson"
-
-
 - name: declare a vim config
   template:
       src: "vimrc"
