@@ -10,10 +10,6 @@
       vars:
          repos: "{{ commun_repos }}"
     - role: install
-      tags: ["devops"]
-      vars:
-         repos: "{{ devops_repos }}"
-    - role: install
       tags: ["dev"]
       vars:
          repos: "{{ dev_repos }}"

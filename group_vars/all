@@ -7,12 +7,9 @@ commun_repos:
   - "thunderbird"
   - "gimp"
   - "tree"
+  - "docker"
 
 dev_repos:
   - "maven"
-  - "intellij-idea-ultimate-edition"
+#  - "intellij-idea-ultimate-edition"
   - "tig"
-
-devops_repos:
-  - "jenkins"
-  - "docker"
