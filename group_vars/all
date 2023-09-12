@@ -2,6 +2,7 @@ myEmail: "toto@gmail.com"
 
 commun_repos:
   - "terminator"
+  - "vim"
   - "zsh"
   - "baobab"
   - "thunderbird"
